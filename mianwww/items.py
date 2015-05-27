@@ -17,3 +17,6 @@ class DmozItem(Item):
     link=Field()
     desc=Field()
 
+class Post(Item):
+    title = Field()
+    contents = Field()
