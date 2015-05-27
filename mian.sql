@@ -24,6 +24,6 @@ CREATE TABLE `mian_post` (
 
   commit;
   insert into mian_post(category_id, post_title, post_content) values(%s, %s, %s);
-
+  select post_title,post_content from mian_post where category_id=? limit 0,20
   select * from mian_category;
   select * from mian_post;
