@@ -28,3 +28,4 @@ CREATE TABLE `mian_post` (
   select post_title,post_content from mian_post where category_id=? limit 0,20
   select * from mian_category;
   select * from mian_post;
+create database mian default character set utf8;
